@@ -1,0 +1,41 @@
+# Core PyTorch dependencies - specific versions to ensure compatibility
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
+
+# Tensor manipulation libraries
+einops>=0.6.0
+numpy>=1.20.0,<1.24.0  # Some AI libraries have issues with newest numpy versions
+
+# Model loading and saving
+safetensors>=0.3.1
+
+# Audio processing libraries
+librosa>=0.9.2
+soundfile>=0.12.1
+
+# Text processing for conditioning
+transformers>=4.25.0,<4.30.0  # Using an older version for compatibility
+sentencepiece>=0.1.97  # Often needed for text tokenizers
+
+# Model training and inference utilities
+diffusers>=0.14.0,<0.16.0  # Older version for compatibility
+accelerate>=0.16.0
+tritonclient>=2.29.0  # For efficient inference
+
+# Progress bars and utilities
+tqdm>=4.64.0
+pyyaml>=6.0
+pillow>=9.3.0
+
+# File format support
+h5py>=3.7.0
+scipy>=1.9.0
+
+# Visualization (if needed)
+matplotlib>=3.6.0
+
+# Additional potential dependencies
+jsonschema>=4.17.0
+regex>=2022.10.31
+fsspec>=2022.11.0

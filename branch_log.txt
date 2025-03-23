@@ -1,0 +1,132 @@
+Folder PATH listing
+Volume serial number is BA99-345D
+C:.
+|   run.py
+|   requirements.txt
++---stable-audio-open-1.0
+|   |   .gitattributes
+|   |   fma_dataset_attribution2.csv
+|   |   freesound_dataset_attribution2.csv
+|   |   LICENSE.md
+|   |   model.ckpt
+|   |   model.safetensors
+|   |   model_config.json
+|   |   model_index.json
+|   |   README.md
+|   |   stable_audio_light.png
+|   |   
+|   +---projection_model
+|   |       config.json
+|   |       diffusion_pytorch_model.safetensors
+|   |       
+|   +---scheduler
+|   |       scheduler_config.json
+|   |       
+|   +---text_encoder
+|   |       config.json
+|   |       model.safetensors
+|   |       
+|   +---tokenizer
+|   |       special_tokens_map.json
+|   |       spiece.model
+|   |       tokenizer.json
+|   |       tokenizer_config.json
+|   |       
+|   +---transformer
+|   |       config.json
+|   |       diffusion_pytorch_model.safetensors
+|   |       
+|   \---vae
+|           config.json
+|           diffusion_pytorch_model.safetensors
+|           
+\---stable-audio-tools
+    \---stable_audio_tools
+        |   __init__.py
+        |   
+        +---configs
+        |   +---dataset_configs
+        |   |   |   local_training_example.json
+        |   |   |   s3_wds_example.json
+        |   |   |   
+        |   |   \---custom_metadata
+        |   |           custom_md_example.py
+        |   |           
+        |   \---model_configs
+        |       +---autoencoders
+        |       |       dac_2048_32_vae.json
+        |       |       encodec_musicgen_rvq.json
+        |       |       stable_audio_1_0_vae.json
+        |       |       stable_audio_2_0_vae.json
+        |       |       
+        |       +---dance_diffusion
+        |       |       dance_diffusion_base.json
+        |       |       dance_diffusion_base_16k.json
+        |       |       dance_diffusion_base_44k.json
+        |       |       dance_diffusion_large.json
+        |       |       
+        |       \---txt2audio
+        |               stable_audio_1_0.json
+        |               stable_audio_2_0.json
+        |               
+        +---data
+        |       dataset.py
+        |       utils.py
+        |       __init__.py
+        |       
+        +---inference
+        |       generation.py
+        |       sampling.py
+        |       utils.py
+        |       __init__.py
+        |       
+        +---interface
+        |   |   aeiou.py
+        |   |   gradio.py
+        |   |   __init__.py
+        |   |   
+        |   \---interfaces
+        |           diffusion_cond.py
+        |           __init__.py
+        |           
+        +---models
+        |       adp.py
+        |       autoencoders.py
+        |       blocks.py
+        |       bottleneck.py
+        |       codebook_patterns.py
+        |       conditioners.py
+        |       diffusion.py
+        |       diffusion_prior.py
+        |       discriminators.py
+        |       dit.py
+        |       encodec.py
+        |       factory.py
+        |       fsq.py
+        |       lm.py
+        |       lm_backbone.py
+        |       local_attention.py
+        |       pqmf.py
+        |       pretrained.py
+        |       pretransforms.py
+        |       transformer.py
+        |       utils.py
+        |       wavelets.py
+        |       __init__.py
+        |       
+        \---training
+            |   autoencoders.py
+            |   diffusion.py
+            |   factory.py
+            |   lm.py
+            |   utils.py
+            |   __init__.py
+            |   
+            \---losses
+                    auraloss.py
+                    losses.py
+                    metrics.py
+                    semantic.py
+                    utils.py
+                    __init__.py
+                    
